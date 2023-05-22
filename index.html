@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png" type="image/png" />
+    <link rel="stylesheet" href="main.css">
+    <title>Frontend Mentor | Age Calculator App</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="top">
+            <div class="input">
+                <label class= "labelday" for="day">Day</label> <input name="day" class="day" value="" type="number" placeholder="DD">
+               <p class="empty-day hide">This field is required</p>
+            <p class="invalid-day hide">Must be a valid day</p>
+            <p class="invalid-day hide">Must be a valid date</p>
+            </div>
+            <div class="input">
+                <label class= "labelmonth" for="month">Month</label> <input name="month" class="month" value="" type="number" placeholder="MM">
+                <p class="empty-month hide">This field is required</p>
+            <p class="invalid-month hide">Must be a valid month</p>
+            </div>
+            <div class="input">
+                <label class= "labelyear" for="year">Year</label> <input name="year" class="year" value="" type="number" placeholder="YYYY">
+                <p class="empty-year hide">This field is required</p>
+            <p class="invalid-year hide">Must be a valid year</p>
+            <p class="past-date hide">Must be in the past</p>
+            </div>
+        </div>
+        <div class="mid">
+            <hr><button type="submit" class="submit"><img src="./images/icon-arrow.svg" alt="arrow"></button>
+        </div>
+        <div class="bottom">
+            <div class="row">
+                <p class="years">--</p>
+                <p class="text">years</p>
+            </div>
+            <div class="row">
+                <p class="months">--</p>
+                <p class="text">months</p>
+            </div>
+            <div class="row">
+                <p class="days">--</p>
+                <p class="text"></p>days
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
